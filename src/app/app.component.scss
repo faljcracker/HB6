@@ -1,0 +1,41 @@
+.slide_one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("src/assets/sea_freight.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide_two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("src/assets/plane2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide_three {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("src/assets/truck.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.slide_four {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("src/assets/warehouse.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bg-blue-transparent {
+  background-color: rgba(0, 51, 102, 0.5);
+  color: white;
+}
+
+.mid-nav {
+  color: white !important;
+  background-color: rgba(0, 51, 102, 1) !important;
+
+  col-md-3:hover {
+    border-top: 4px solid white;
+    cursor: pointer;
+  }
+}
