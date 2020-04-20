@@ -2,12 +2,14 @@
   background-color: rgba(0, 51, 102, 0.5);
   color: white;
 }
+
 .bg-transparent {
   background: transparent;
 }
+
 i {
   font-size: 1.2rem;
-  color: dodgerblue;
+  color: deepskyblue;
 }
 
 a.nav-link {
@@ -15,10 +17,10 @@ a.nav-link {
   font-weight: bold;
 }
 a.nav-link:hover {
-  border-bottom: 4px solid dodgerblue !important;
+  border-bottom: 4px solid deepskyblue !important;
   transition: width 3s;
   transition-timing-function: linear;
 }
 .active {
-  border-bottom: 4px solid dodgerblue !important;
+  border-bottom: 4px solid deepskyblue !important;
 }

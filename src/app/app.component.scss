@@ -30,12 +30,36 @@
   color: white;
 }
 
+.bg-sky-blue{
+  padding:1.5rem;
+  background-color:deepskyblue;
+  .col-md-3 {
+    display:flex;
+    padding: 1.5rem !important;
+  }
+  i {
+    margin-right:1.5rem;
+    color:white;
+  }
+  h2,p{
+    color:lightgray;
+  }
+}
+
 .mid-nav {
   color: white !important;
   background-color: rgba(0, 51, 102, 1) !important;
 
-  col-md-3:hover {
-    border-top: 4px solid white;
+  .col-md-3:hover {
+    border-top: 2px solid white;
     cursor: pointer;
   }
+}
+
+hr {
+  width:15%;
+  margin:0 0 3rem 0 !important;
+  text-align:left !important;
+  padding:1px !important;
+  background-color:deepskyblue !important;
 }
