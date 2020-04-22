@@ -90,3 +90,41 @@ hr {
 .transparent {
   background: transparent !important;
 }
+
+.mountain-bg {
+color:white;
+background-image: url("src/assets/mountain.jpg");
+background-position: center;
+background-size: cover;
+}
+
+.faq .card {
+  color:black;
+  margin-bottom: 1.5rem;
+  .card-body{
+    padding: 2rem !important;
+  }
+  .card-title:hover{
+    color:deepskyblue;
+  }
+  .card-text {
+    margin: 1.5rem 0;
+    color:gray;
+  }
+  a {
+    color:deepskyblue;
+  }
+  i {
+    margin-left: 0.5rem !important;
+  }
+  .badge{
+    position: absolute;
+    right:-20px;
+    top:10px;
+    background:red;
+    text-align: center;
+    color:white;
+    padding:5px 10px;
+    font-size:20px;
+}
+}
