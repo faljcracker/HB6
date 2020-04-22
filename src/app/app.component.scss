@@ -68,8 +68,22 @@ hr {
 .card_slider {
   background-color: rgba(0, 51, 102, 1) !important;
   color: lightgray;
-  h5 {
-    color: white;
+  .col-md-9 .card {
+    color:black;
+    border:none !important;
+    margin-bottom: 1.5rem;
+    .card-body{
+      padding: 2rem !important;
+    }
+    .card-title {
+      font-weight: bold;
+    }
+    a {
+      color:deepskyblue;
+    }
+    i {
+      margin-left: 0.5rem !important;
+    }
   }
 }
 
