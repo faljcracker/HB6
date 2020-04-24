@@ -37,12 +37,22 @@ $(document).ready(function () {
     ]
   });
 
+  $('#news').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    autoplaySpeed: 3000,
+
+  });
+
   $('#reviews').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    dots: true,
+    dots: false,
     autoplaySpeed: 3000,
 
   });

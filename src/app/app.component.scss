@@ -28,6 +28,7 @@
 
 .bg-sky-blue {
   padding: 1.5rem;
+  color: white;
   background-color: deepskyblue;
   .col-md-3 {
     display: flex;
@@ -37,9 +38,8 @@
     margin-right: 1.5rem;
     color: white;
   }
-  h2,
-  p {
-    color: lightgray;
+  h2 {
+    font-weight: bold;
   }
 }
 
@@ -167,15 +167,30 @@ hr {
 }
 .executive-bg {
   background-image: url("src/assets/executive.png");
-  background-position: right;
+  background-position: right 25px;
   background-repeat: no-repeat;
   background-size: contain;
-  hr {
+  .quotes {
     width: 50%;
+    color: deepskyblue;
     background-color: transparent !important;
     border-top: 1px solid deepskyblue;
     border-bottom: 1px solid deepskyblue;
     margin: 3rem auto !important;
     padding: 1px !important;
+  }
+}
+
+.icon-desc {
+  .col-md-6 {
+    display: flex;
+    padding: 1.5rem !important;
+  }
+  i {
+    margin-right: 1.5rem;
+    color: deepskyblue;
+  }
+  p {
+    font-weight: bold;
   }
 }
