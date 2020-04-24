@@ -1,27 +1,23 @@
 .slide_one {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("src/assets/sea_freight.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("src/assets/sea_freight.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .slide_two {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("src/assets/plane2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("src/assets/plane2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .slide_three {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("src/assets/truck.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("src/assets/truck.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .slide_four {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("src/assets/warehouse.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("src/assets/warehouse.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -69,17 +65,17 @@ hr {
   background-color: rgba(0, 51, 102, 1) !important;
   color: lightgray;
   .col-md-9 .card {
-    color:black;
-    border:none !important;
+    color: black;
+    border: none !important;
     margin-bottom: 1.5rem;
-    .card-body{
+    .card-body {
       padding: 2rem !important;
     }
     .card-title {
       font-weight: bold;
     }
     a {
-      color:deepskyblue;
+      color: deepskyblue;
     }
     i {
       margin-left: 0.5rem !important;
@@ -92,42 +88,94 @@ hr {
 }
 
 .mountain-bg {
-color:white;
-background-image: url("src/assets/mountain.jpg");
-background-position: center;
-background-size: cover;
+  color: white;
+  background-image: url("src/assets/mountain.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .faq .card {
-  color:black;
+  color: black;
   margin-bottom: 1.5rem;
-  .card-body{
+  .card-body {
     padding: 2rem !important;
   }
-  .card-title:hover{
-    color:deepskyblue;
+  .card-title:hover {
+    color: deepskyblue;
   }
   .card-text {
     margin: 1.5rem 0;
-    color:gray;
+    color: gray;
   }
   a {
-    color:deepskyblue;
+    color: deepskyblue;
   }
   i {
     margin-left: 0.5rem !important;
   }
-  .badge{
+  .badge {
     position: absolute;
-    right:0%;
-    top:0%;
-    background:red;
+    right: 0%;
+    top: 0%;
+    background: deepskyblue;
     text-align: center;
-    color:white;
-    padding:0.5rem;
-    font-size:20px;
+    color: white;
+    padding: 0.5rem;
+    font-size: 20px;
     p {
-      margin:8px !important;
+      margin: 8px !important;
     }
+  }
 }
+
+.btn-primary {
+  background-color: deepskyblue !important;
+  color: white !important;
+  border: none !important;
+}
+.btn-primary:hover {
+  background-color: #0089d9 !important;
+}
+
+.btn-outline-primary {
+  color: deepskyblue !important;
+  border-color: deepskyblue !important;
+}
+.btn-outline-primary:hover {
+  background-color: deepskyblue !important;
+  color: white !important;
+  border: none !important;
+}
+
+.bg-primary {
+  background-color: deepskyblue !important;
+  color: white !important;
+}
+.text-primary {
+  color: deepskyblue !important;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.executive-bg {
+  background-image: url("src/assets/executive.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  hr {
+    width: 50%;
+    background-color: transparent !important;
+    border-top: 1px solid deepskyblue;
+    border-bottom: 1px solid deepskyblue;
+    margin: 3rem auto !important;
+    padding: 1px !important;
+  }
 }

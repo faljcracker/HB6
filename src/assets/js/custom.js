@@ -37,4 +37,14 @@ $(document).ready(function () {
     ]
   });
 
+  $('#reviews').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    dots: true,
+    autoplaySpeed: 3000,
+
+  });
+
 });
