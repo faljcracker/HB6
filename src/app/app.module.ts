@@ -27,7 +27,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAzSnXXXXXXXXXXXXXXXXXSZGGWU'
+      apiKey: 'AIzaSyAKmzlmATSxTIOUHagK35K5YAGwGLfI_a4'
     }),
     AppRoutingModule
   ],
