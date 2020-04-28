@@ -12,6 +12,7 @@ import { TrackingComponent } from './tracking/tracking.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './contact/contact.component';
     TrackingComponent,
     ServicesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
