@@ -1,17 +1,17 @@
 .slide_one {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("src/assets/sea_freight.jpg");
+  background-image: url("src/assets/sea_freight.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .slide_two {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("src/assets/plane2.jpg");
+  background-image: url("src/assets/plane2.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .slide_three {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("src/assets/truck.jpg");
+  background-image: url("src/assets/truck.jpg");
   background-position: center;
   background-size: cover;
 }
