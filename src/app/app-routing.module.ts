@@ -6,6 +6,7 @@ import { TrackingComponent } from './tracking/tracking.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'Services', component: ServicesComponent },
   { path: 'About', component: AboutComponent },
   { path: 'Contact', component: ContactComponent },
+  { path: 'Dashboard', component: DashboardComponent},
 
 ];
 
