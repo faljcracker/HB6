@@ -2,13 +2,24 @@
   background-image: url("src/assets/truck-1.jpg");
   background-position: center;
   background-size: auto;
-  height: 600px;
+  h1 {
+  color:white;
+}
 }
 
 hr {
   width:10% !important;
 }
 
-h1 {
+
+
+.tracking-form {
+  padding: 3rem;
   color:white;
+  text-align:center !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("src/assets/warehouse.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom:3rem;
+
 }
