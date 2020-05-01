@@ -8,7 +8,7 @@
 $host       = "localhost";
 $username   = "wordpress";
 $password   = "wordpress";
-$dbname     = "test";
+$dbname     = "tracker";
 $dsn        = "mysql:host=$host;dbname=$dbname";
 $options    = array(
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
