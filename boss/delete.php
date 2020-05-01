@@ -12,7 +12,7 @@ if (isset($_POST["submit"])) {
 
     $id = $_POST["submit"]; //extract id from submitted form data
 
-    $sql = "DELETE FROM marks WHERE id = :id";  //sql query to delete item based on its id
+    $sql = "DELETE FROM parcels WHERE id = :id";  //sql query to delete item based on its id
 
     $statement = $connection->prepare($sql);  //sending the sql statement to the database through a PDO connection
     $statement->bindValue(':id', $id);
@@ -29,7 +29,7 @@ try {
 
   $connection = new PDO($dsn, $username, $password, $options);
 
-  $sql = "SELECT * FROM marks";
+  $sql = "SELECT * FROM parcels";
 
   $statement = $connection->prepare($sql);
   $statement->execute();
@@ -46,64 +46,90 @@ try {
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Delete</title>
+    <title>Delete</title>
 
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
+
 <body>
 
-<div class= "container-fluid p-5">
-<h2 class="my-5 text-primary"><strong>Delete items</strong></h2>
+    <div class="container-fluid p-5">
+        <h2 class="my-5 text-primary"><strong>Delete items</strong></h2>
 
- <?php if (isset($_POST['submit']) && $statement) : ?>
-    <h4 class="mb-5">Success Candidate <strong class="text-danger"><?php echo $_POST['submit']; ?></strong> Has been deleted.</h4>
-  <?php endif; ?>
+        <?php if (isset($_POST['submit']) && $statement) : ?>
+        <h4 class="mb-5">Success Tracking <strong class="text-danger"><?php echo $_POST['submit']; ?></strong> Has been
+            deleted.</h4>
+        <?php endif; ?>
 
 
 
-<form class="form" method="post"> <!-- wrap form with table -->
-  <table class="table ">
-    <thead>
-      <tr>
-         <th>id</th>
-          <th>Candidate Number</th>
-          <th>Test Date</th>
-          <th>DOB</th>
-          <th>IDN</th>
-          <th>Overall Band</th>
-          <th>Listening</th>
-          <th>Reading</th>
-          <th>Writing</th>
-          <th>Speaking</th>
-          <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($result as $row) : ?>
-      <tr>
-          <td><?php echo $row["id"]; ?></td>
-          <td><?php echo $row["cand_number"]; ?></td>
-          <td><?php echo $row["test_date"]; ?></td>
-          <td><?php echo $row["DOB"]; ?></td>
-          <td><?php echo $row["IDN"]; ?></td>
-          <td><?php echo $row["overall_band"]; ?></td>
-          <td><?php echo $row["listening"]; ?></td>
-          <td><?php echo $row["reading"]; ?></td>
-          <td><?php echo $row["writing"]; ?></td>
-          <td><?php echo $row["speaking"]; ?></td>
-        <td><button class = "btn btn-danger px-4 py-1" type="submit" name="submit" value="<?php echo $row["id"]; ?>">Delete</button></td>
-      </tr>
-    <?php endforeach; ?>
-    </tbody>
-  </table>
-</form>
+        <form class="form" method="post">
+            <!-- wrap form with table -->
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>collection_date_time</th>
+                        <th>delivery_schedule</th>
+                        <th>last_location</th>
+                        <th>origin</th>
+                        <th>destination</th>
+                        <th>service_mode</th>
+                        <th>service_type</th>
+                        <th>shipping_description</th>
+                        <th>sender_name</th>
+                        <th>sender_phone</th>
+                        <th>sender_address</th>
+                        <th>recipient_name</th>
+                        <th>recipient_phone</th>
+                        <th>recipient_address</th>
+                        <th>shipping_history</th>
+                        <th>tracking_number</th>
+                        <th>shipping_state</th>
+                        <th>shipping_date_time</th>
+                        <th>remarks</th>
+                        <th>weight_kg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($result as $row) : ?>
+                    <tr>
+                        <td><?php echo $row["id"]; ?></td>
+                        <td><?php echo $row["collection_date_time"]; ?></td>
+                        <td><?php echo $row["delivery_schedule"]; ?></td>
+                        <td><?php echo $row["last_location"]; ?></td>
+                        <td><?php echo $row["origin"]; ?></td>
+                        <td><?php echo $row["destination"]; ?></td>
+                        <td><?php echo $row["service_mode"]; ?></td>
+                        <td><?php echo $row["service_type"]; ?></td>
+                        <td><?php echo $row["shipping_description"]; ?></td>
+                        <td><?php echo $row["sender_name"]; ?></td>
+                        <td><?php echo $row["sender_phone"]; ?></td>
+                        <td><?php echo $row["sender_address"]; ?></td>
+                        <td><?php echo $row["recipient_name"]; ?></td>
+                        <td><?php echo $row["recipient_phone"]; ?></td>
+                        <td><?php echo $row["recipient_address"]; ?></td>
+                        <td><?php echo $row["shipping_history"]; ?></td>
+                        <td><?php echo $row["tracking_number"]; ?></td>
+                        <td><?php echo $row["shipping_state"]; ?></td>
+                        <td><?php echo $row["shipping_date_time"]; ?></td>
+                        <td><?php echo $row["remarks"]; ?></td>
+                        <td><?php echo $row["weight_kg"]; ?></td>
+                        <td><button class="btn btn-danger px-4 py-1" type="submit" name="submit"
+                                value="<?php echo $row["id"]; ?>">Delete</button></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </form>
 
-  <a class = "btn btn-danger btn-lg w-25 my-3" href="index.php">menu</a> <!-- nav button to return to main menu -->
+        <a class="btn btn-danger btn-lg w-25 my-3" href="index.php">menu</a> <!-- nav button to return to main menu -->
 
 
 </body>
+
 </html>
