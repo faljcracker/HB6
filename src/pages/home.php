@@ -2,7 +2,9 @@
   <div class="carousel-inner">
 
     <div class="carousel-item slide_one active">
-      <app-top-nav></app-top-nav>
+
+      <?php require 'src/pages/nav.html'; ?>
+
       <div class="container my-5">
         <div class="row">
           <div class="col-12 col-md-6 bg-blue-transparent p-5 my-5">
@@ -23,7 +25,8 @@
     </div>
 
     <div class="carousel-item slide_two ">
-      <app-top-nav></app-top-nav>
+
+      <?php require 'src/pages/nav.html'; ?>
 
       <div class="container my-5">
         <div class="row">
@@ -45,7 +48,9 @@
     </div>
 
     <div class="carousel-item slide_three ">
-      <app-top-nav></app-top-nav>
+
+      <?php require 'src/pages/nav.html'; ?>
+
       <div class="container my-5">
         <div class="row">
           <div class="col-12 col-md-6 bg-blue-transparent p-5 my-5">
@@ -66,7 +71,8 @@
     </div>
 
     <div class="carousel-item slide_four ">
-      <app-top-nav></app-top-nav>
+
+  <?php require 'src/pages/nav.html'; ?>
       <div class="container my-5">
         <div class="row">
           <div class="col-12 col-md-6 bg-blue-transparent p-5 my-5">
