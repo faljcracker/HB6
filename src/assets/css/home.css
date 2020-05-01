@@ -3,19 +3,16 @@
   background-position: center;
   background-size: cover;
 }
-
 .slide_two {
   background-image: url("../images/plane2.jpg");
   background-position: center;
   background-size: cover;
 }
-
 .slide_three {
   background-image: url("../images/truck.jpg");
   background-position: center;
   background-size: cover;
 }
-
 .slide_four {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/warehouse.jpg");
   background-position: center;
@@ -25,103 +22,93 @@
   background-color: rgba(0, 51, 102, 0.5);
   color: white;
 }
-
 .bg-sky-blue {
   padding: 1.5rem;
   color: white;
   background-color: deepskyblue;
-  .col-md-3 {
-    display: flex;
-    padding: 1.5rem !important;
-  }
-  i {
-    margin-right: 1.5rem;
-    color: white;
-  }
-  h2 {
-    font-weight: bold;
-  }
 }
-
+.bg-sky-blue .col-md-3 {
+  display: flex;
+  padding: 1.5rem !important;
+}
+.bg-sky-blue i {
+  margin-right: 1.5rem;
+  color: white;
+}
+.bg-sky-blue h2 {
+  font-weight: bold;
+}
 .mid-nav {
   color: white !important;
-  background-color: rgba(0, 51, 102, 1) !important;
-
-  .col-md-3:hover {
-    border-top: 2px solid white;
-    cursor: pointer !important;
-  }
+  background-color: #036 !important;
 }
-
-
-
+.mid-nav .col-md-3:hover {
+  border-top: 2px solid white;
+  cursor: pointer !important;
+}
 .card_slider {
-  background-color: rgba(0, 51, 102, 1) !important;
+  background-color: #036 !important;
   color: lightgray;
-  .col-md-9 .card {
-    color: black;
-    border: none !important;
-    margin-bottom: 1.5rem;
-    .card-body {
-      padding: 2rem !important;
-    }
-    .card-title {
-      font-weight: bold;
-    }
-    a {
-      color: deepskyblue;
-    }
-    i {
-      margin-left: 0.5rem !important;
-    }
-  }
 }
-
+.card_slider .col-md-9 .card {
+  color: black;
+  border: none !important;
+  margin-bottom: 1.5rem;
+}
+.card_slider .col-md-9 .card .card-body {
+  padding: 2rem !important;
+}
+.card_slider .col-md-9 .card .card-title {
+  font-weight: bold;
+}
+.card_slider .col-md-9 .card a {
+  color: deepskyblue;
+}
+.card_slider .col-md-9 .card i {
+  margin-left: 0.5rem !important;
+}
 .transparent {
   background: transparent !important;
 }
-
 .mountain-bg {
   color: white;
   background-image: url("../images/mountain.jpg");
   background-position: center;
   background-size: cover;
 }
-
 .faq .card {
   color: black;
   margin-bottom: 1.5rem;
-  .card-body {
-    padding: 2rem !important;
-  }
-  .card-title:hover {
-    color: deepskyblue;
-  }
-  .card-text {
-    margin: 1.5rem 0;
-    color: gray;
-  }
-  a {
-    color: deepskyblue;
-  }
-  i {
-    margin-left: 0.5rem !important;
-  }
-  .badge {
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    background: deepskyblue;
-    text-align: center;
-    color: white;
-    padding: 0.5rem;
-    font-size: 20px;
-    p {
-      margin: 8px !important;
-    }
-  }
 }
-
+.faq .card .card-body {
+  padding: 2rem !important;
+}
+.faq .card .card-title:hover {
+  color: deepskyblue;
+}
+.faq .card .card-text {
+  margin: 1.5rem 0;
+  color: gray;
+}
+.faq .card a {
+  color: deepskyblue;
+}
+.faq .card i {
+  margin-left: 0.5rem !important;
+}
+.faq .card .badge {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  background: deepskyblue;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+.faq .card .badge p {
+  margin: 8px !important;
+}
 .btn-primary {
   background-color: deepskyblue !important;
   color: white !important;
@@ -130,7 +117,6 @@
 .btn-primary:hover {
   background-color: #0089d9 !important;
 }
-
 .btn-outline-primary {
   color: deepskyblue !important;
   border-color: deepskyblue !important;
@@ -140,7 +126,6 @@
   color: white !important;
   border: none !important;
 }
-
 .bg-primary {
   background-color: deepskyblue !important;
   color: white !important;
@@ -164,27 +149,24 @@
   background-position: right 25px;
   background-repeat: no-repeat;
   background-size: contain;
-  .quotes {
-    width: 50%;
-    color: deepskyblue;
-    background-color: transparent !important;
-    border-top: 1px solid deepskyblue;
-    border-bottom: 1px solid deepskyblue;
-    margin: 3rem auto !important;
-    padding: 1px !important;
-  }
 }
-
-.icon-desc {
-  .col-md-6 {
-    display: flex;
-    padding: 1.5rem !important;
-  }
-  i {
-    margin-right: 1.5rem;
-    color: deepskyblue;
-  }
-  p {
-    font-weight: bold;
-  }
+.executive-bg .quotes {
+  width: 50%;
+  color: deepskyblue;
+  background-color: transparent !important;
+  border-top: 1px solid deepskyblue;
+  border-bottom: 1px solid deepskyblue;
+  margin: 3rem auto !important;
+  padding: 1px !important;
+}
+.icon-desc .col-md-6 {
+  display: flex;
+  padding: 1.5rem !important;
+}
+.icon-desc i {
+  margin-right: 1.5rem;
+  color: deepskyblue;
+}
+.icon-desc p {
+  font-weight: bold;
 }
