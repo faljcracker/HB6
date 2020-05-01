@@ -119,7 +119,7 @@ if (isset($_POST['submit'])) { /* loop through returned results and place in tab
         <!-- form used to collect information to be searched -->
         <form class="form w-50" method="post">
             <div class="form-group">
-                <label class="h4" for="tracking_number"><strong>Candidate Number</strong></label>
+                <label class="h4" for="tracking_number"><strong>Tracking Number</strong></label>
                 <input class="form-control form-control-lg" type="text" id="tracking_number" name="tracking_number">
             </div>
             <input class="btn btn-primary btn-lg w-100" type="submit" name="submit" value="search">

@@ -9,12 +9,12 @@ if (isset($_POST['submit'])) { /* check for form submission */
     $connection = new PDO($dsn, $username, $password, $options);
 
     $sql = "SELECT *
-            FROM marks
-            WHERE cand_number = :cand_number";
+            FROM parcels
+            WHERE tracking_number = :tracking_number";
 
-    $cand_number = $_POST['cand_number'];
+    $tracking_number = $_POST['tracking_number'];
     $statement = $connection->prepare($sql);
-    $statement->bindParam(':cand_number', $cand_number, PDO::PARAM_STR);
+    $statement->bindParam(':tracking_number', $tracking_number, PDO::PARAM_STR);
     $statement->execute();
 
     /* return results of querry back here */
@@ -48,14 +48,14 @@ if (isset($_POST['submit'])) { /* check for form submission */
             <p>Automatically detect courier based on tracking number format.</p>
 
 
-            <form method="post" name="cand-area-form" class="form-inline my-5 d-block">
+            <form method="post" name="tracking_form" class="form-inline my-5 d-block">
                 <label class="sr-only" for="search">number</label>
                 <div class="input-group mb-2 mr-sm-2">
                     <div class="input-group-prepend">
                         <div class="input-group-text bg-white border-0"><i class="fa fa-search"></i></div>
                     </div>
-                    <input type="text" class="form-control form-control-lg border-0" id="search" placeholder="search"
-                        name="cand_number">
+                    <input type="text" class="form-control form-control-lg border-0" id="search"
+                        placeholder="Tracking number" name="tracking_number">
                     <div class="input-group-append"><input name="submit" type="submit" class="btn btn-lg btn-danger"
                             value="TRACK">
                     </div>
@@ -84,17 +84,17 @@ if (isset($_POST['submit'])) {
             <div class="row">
                 <div class="col-md-4">
                     <p><span>Collection date and time</span></p>
-                    <p><?php echo $row["overall_band"]; ?></p>
+                    <p><?php echo $row["collection_date_time"]; ?></p>
                 </div>
 
                 <div class="col-md-4">
                     <p><span>Delivery schedule</span></p>
-                    <p>4/12/2020 7:30 PM , End of the day</p>
+                    <p><?php echo $row["delivery_schedule"]; ?></p>
                 </div>
 
                 <div class="col-md-4">
                     <p><span>Last location</p>
-                    <p>United States | Manhattan NY 10035</span></p>
+                    <p><?php echo $row["last_location"]; ?></span></p>
                 </div>
             </div>
 
@@ -102,25 +102,25 @@ if (isset($_POST['submit'])) {
 
             <div class="row">
                 <div class="col-md-4">
-                    <p><span>Origin: </span>United States</p>
-                    <p><span>Destination: </span>United States</p>
-                    <p><span>Service mode: </span>Air</p>
-                    <p><span>Service Type: </span>Discrete Package</p>
-                    <p><span>Shipping Description: </span>Discrete Package</p>
+                    <p><span>Origin: </span><?php echo $row["origin"]; ?></p>
+                    <p><span>Destination: </span><?php echo $row["destination"]; ?></p>
+                    <p><span>Service mode: </span><?php echo $row["service_mode"]; ?></p>
+                    <p><span>Service Type: </span><?php echo $row["service_type"]; ?></p>
+                    <p><span>Shipping Description: </span><?php echo $row["shipping_description"]; ?></p>
                 </div>
 
                 <div class="col-md-4">
                     <p><span>Sender information</span></p>
-                    <p><span>Name: </span>Brandon Frazier</p>
-                    <p><span>Phone: </span>+17207726079</p>
-                    <p><span>Address: </span>1076 CURTIS STREET, DENVER, CO 80202</p>
+                    <p><span>Name: </span><?php echo $row["sender_name"]; ?></p>
+                    <p><span>Phone: </span><?php echo $row["sender_phone"]; ?></p>
+                    <p><span>Address: </span><?php echo $row["sender_address"]; ?></p>
                 </div>
 
                 <div class="col-md-4">
                     <p><span>Recipient information</span></p>
-                    <p><span>Name: </span>Brandon Frazier</p>
-                    <p><span>Phone: </span>+17207726079</p>
-                    <p><span>Address: </span>1076 CURTIS STREET, DENVER, CO 80202</p>
+                    <p><span>Name: </span><?php echo $row["recipient_name"]; ?></p>
+                    <p><span>Phone: </span><?php echo $row["recipient_phone"]; ?></p>
+                    <p><span>Address: </span><?php echo $row["recipient_address"]; ?></p>
                 </div>
             </div>
 
@@ -138,11 +138,11 @@ if (isset($_POST['submit'])) {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>AWB-1000262</td>
-                        <td>United States | Manhattan NY 10035</td>
-                        <td>In Transit</td>
-                        <td>2020-04-11 21:35:26</td>
-                        <td>EXTREMELY URGENT REFUNDABLE INSURANCE NEEDED FOR YOUR PARCEL.</td>
+                        <td><?php echo $row["shipping_history"]; ?></td>
+                        <td><?php echo $row["tracking_number"]; ?></td>
+                        <td><?php echo $row["shipping_state"]; ?></td>
+                        <td><?php echo $row["shipping_date_time"]; ?></td>
+                        <td><?php echo $row["remarks"]; ?></td>
                     </tr>
 
                 </tbody>
@@ -152,16 +152,16 @@ if (isset($_POST['submit'])) {
 
         <div class="col-md-3 bg-light p-3 text-center" id="side-section">
             <img class="w-75 d-block mx-auto" src="../src/assets/images/barcode.png">
-            <p class="my-3"><span>AWB-1000262</span></p>
+            <p class="my-3"><span><?php echo $row["tracking_number"]; ?></span></p>
             <i class="fas fa-map-marked fa-3x my-3"></i>
             <p class="my-3">CURRENT STATE</p>
 
-            <p class="btn btn-success font-weight-bold">In Transit</p>
+            <p class="btn btn-success font-weight-bold"><?php echo $row["shipping_state"]; ?></p>
             <br>
             <i class="fas fa-box-open fa-3x my-3"></i>
 
-            <p class="my-3">WEIGHT KG</p>
-            <p>0</p>
+            <p class="my-3">WEIGHT</p>
+            <p><?php echo $row["weight_kg"]; ?>kg</p>
 
 
         </div>
@@ -176,10 +176,10 @@ if (isset($_POST['submit'])) {
 <div class="container">
     <script type='text/javascript'>
     alert('Sorry no match found for Candidate Number: <?php echo $_POST['
-        cand_number ']; ?>. Please verify and try again ');
+        tracking_number ']; ?>. Please verify and try again ');
     </script>
-    <h6 class="mb-5">Sorry no match found for Candidate Number <strong
-            class="text-danger"><?php echo $_POST['cand_number']; ?></strong>. Please verify and try again</h6>
+    <h6 class="mb-5">Sorry no match found for Tracking Number <strong
+            class="text-danger"><?php echo $_POST['tracking_number']; ?></strong>. Please verify and try again</h6>
 </div>
 
 <?php }
