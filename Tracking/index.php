@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) { /* check for form submission */
 
     <?php require '../src/pages/nav.html'; ?>
 
-    <div class="container p-0 my-5">
+    <div class="container my-5">
         <div class="row">
             <div class="col mb-5 p-2">
                 <hr class="my-5">
@@ -43,10 +43,9 @@ if (isset($_POST['submit'])) { /* check for form submission */
 
 <div class="container tracking-form">
     <div class="row">
-        <div class="col col-md-6 mx-auto">
+        <div class="col-md-6 mx-auto">
             <h1>Track Your shipments</h1>
             <p>Automatically detect courier based on tracking number format.</p>
-
 
             <form method="post" name="tracking_form" class="form-inline my-5 d-block">
                 <label class="sr-only" for="search">number</label>
@@ -61,6 +60,7 @@ if (isset($_POST['submit'])) { /* check for form submission */
                     </div>
                 </div>
             </form>
+
         </div>
     </div>
 </div>
