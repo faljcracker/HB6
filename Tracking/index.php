@@ -1,6 +1,8 @@
-
+<?php require '../src/pages/header.html'; ?>
 
 <div class="header">
+
+<?php require '../src/pages/nav.html'; ?>
 
   <div class="container p-0 my-5">
     <div class="row">
@@ -37,3 +39,6 @@
     </div>
   </div>
 </div>
+
+
+<?php require '../src/pages/footer.html'; ?>
