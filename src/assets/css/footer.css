@@ -1,6 +1,6 @@
 footer {
   color: white !important;
-  background-color: rgba(0, 51, 102, 1) !important;
+  background-color: #003366 !important;
 }
 
 i {
@@ -8,18 +8,17 @@ i {
   color: deepskyblue;
 }
 
-#copyright {
-  i {
-    border: 1px solid white;
-    border-radius: 100%;
-    color: white;
-    padding: 10px 12px;
-  }
-  i:hover {
-    font-size: 1.2rem;
-    border: none;
-    background: deepskyblue;
-  }
+#copyright i {
+  border: 1px solid white;
+  border-radius: 100%;
+  color: white;
+  padding: 10px 12px;
+}
+
+#copyright i:hover {
+  font-size: 1.2rem;
+  border: none;
+  background: deepskyblue;
 }
 
 .text-primary {
