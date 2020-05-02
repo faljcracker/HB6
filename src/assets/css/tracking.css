@@ -9,14 +9,14 @@
 .header hr {
   width: 10% !important;
 }
-.tracking-form {
+#tracking-form {
   color: white;
   text-align: center !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/warehouse.jpg");
   background-position: center;
   background-size: cover;
 }
-.tracking-form .form-control:focus {
+#tracking-form .form-control:focus {
   border: none !important;
   color: #495057;
   background-color: #fff;

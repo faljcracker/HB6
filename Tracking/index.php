@@ -43,7 +43,15 @@ if (isset($_POST['submit'])) { /* check for form submission */
 
 <div class="container my-5">
     <div class="row ">
-        <div class="col-md-8 p-3 p-md-5 tracking-form m-2 mx-md-auto">
+
+        <div id="error-message" class="col-md-8 my-5 mx-md-auto d-none">
+            <h6 class="text-center">Sorry no match found for Tracking Number <strong
+                    class="text-danger"><?php echo $_POST['tracking_number']; ?></strong>. Please verify and try
+                again
+            </h6>
+        </div>
+
+        <div id="tracking-form" class="col-md-8 p-3 p-md-5 m-2 mx-md-auto">
             <h1>Track Your shipments</h1>
             <p>Automatically detect courier based on tracking number format.</p>
 
@@ -72,10 +80,12 @@ if (isset($_POST['submit'])) {
     if ($result && $statement->rowCount() > 0) { ?>
 <?php foreach ($result as $row) : ?>
 
+<script type='text/javascript'>
+alert('Please scroll to view information.');
+document.getElementById('tracking-form').classList.add('d-none');
+</script>
+
 <div class="container my-5" id="tracking-details">
-    <script type='text/javascript'>
-    alert('Please scroll down to view your results.');
-    </script>
 
     <div class="row p-2">
         <div class="col-md-9 mb-5">
@@ -129,18 +139,20 @@ if (isset($_POST['submit'])) {
             <table class="table table-bordered table-responsive text-center">
                 <thead class="thead-light">
                     <tr>
-                        <th>Shipping history</th>
                         <th>Tracking No</th>
-                        <th>State shipping</th>
+                        <th>Shipping history</th>
+                        <th>Shipping state</th>
                         <th>Date and Time</th>
                         <th>Remarks</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><?php echo $row["shipping_history"]; ?></td>
                         <td><?php echo $row["tracking_number"]; ?></td>
-                        <td><?php echo $row["shipping_state"]; ?></td>
+                        <td><?php echo $row["shipping_history"]; ?></td>
+                        <td>
+                            <p class="btn btn-success font-weight-bold"><?php echo $row["shipping_state"]; ?></p>
+                        </td>
                         <td><?php echo $row["shipping_date_time"]; ?></td>
                         <td><?php echo $row["remarks"]; ?></td>
                     </tr>
@@ -177,9 +189,9 @@ if (isset($_POST['submit'])) {
     <script type='text/javascript'>
     alert('Sorry no match found for Tracking Number: <?php echo $_POST['
         tracking_number ']; ?>. Please verify and try again ');
+
+    document.getElementById('error-message').classList.remove('d-none');
     </script>
-    <h6 class="mb-5">Sorry no match found for Tracking Number <strong
-            class="text-danger"><?php echo $_POST['tracking_number']; ?></strong>. Please verify and try again</h6>
 </div>
 
 <?php }
