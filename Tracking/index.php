@@ -25,11 +25,11 @@ if (isset($_POST['submit'])) { /* check for form submission */
 }
 ?>
 
-<?php require '../src/pages/header.html'; ?>
+<?php require 'header.html'; ?>
 
 <div class="header">
 
-    <?php require '../src/pages/nav.html'; ?>
+    <?php require 'nav.html'; ?>
 
     <div class="container my-5">
         <div class="row">
@@ -186,4 +186,4 @@ if (isset($_POST['submit'])) {
     } ?>
 
 
-<?php require '../src/pages/footer.html'; ?>
+<?php require 'footer.html'; ?>
