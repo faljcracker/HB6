@@ -6,7 +6,7 @@
 .header h1 {
   color: white;
 }
-hr {
+.header hr {
   width: 10% !important;
 }
 .tracking-form {

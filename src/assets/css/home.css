@@ -43,7 +43,7 @@
   background-color: #036 !important;
 }
 .mid-nav .col-md-3:hover {
-  border-top: 2px solid white;
+  border: 1px solid white;
   cursor: pointer !important;
 }
 .card_slider {

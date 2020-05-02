@@ -31,10 +31,10 @@ if (isset($_POST['submit'])) { /* check for form submission */
 
     <?php require 'nav.html'; ?>
 
-    <div class="container my-5">
+    <div class="container my-5 text-center text-md-left">
         <div class="row">
             <div class="col mb-5 p-2">
-                <hr class="my-5">
+                <hr class="mx-auto mx-md-0 my-5">
                 <h1>TRACKING</h1>
             </div>
         </div>
