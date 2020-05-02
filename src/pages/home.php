@@ -102,16 +102,16 @@
 <!-- mid nav area-->
 <div class="text-center mid-nav">
     <div class="row no-gutters">
-        <div class="col-md-3 p-4" data-target="#tracker-carousel" data-slide-to="0">
+        <div class="col-6 col-md-3 p-3 border-bottom border-right" data-target="#tracker-carousel" data-slide-to="0">
             <h5> Sea Freight</h5>
         </div>
-        <div class="col-md-3 p-4" data-target="#tracker-carousel" data-slide-to="1">
+        <div class="col-6 col-md-3 p-3 border-bottom border-right" data-target="#tracker-carousel" data-slide-to="1">
             <h5> Air Freight</h5>
         </div>
-        <div class="col-md-3 p-4" data-target="#tracker-carousel" data-slide-to="2">
+        <div class="col-6 col-md-3 p-3 border-bottom border-right" data-target="#tracker-carousel" data-slide-to="2">
             <h5> Road Freight</h5>
         </div>
-        <div class="col-md-3 p-4" data-target="#tracker-carousel" data-slide-to="3">
+        <div class="col-6 col-md-3 p-3 border-bottom border-right" data-target="#tracker-carousel" data-slide-to="3">
             <h5> Ware Housing</h5>
         </div>
     </div>
@@ -515,19 +515,19 @@
 <!-- brands -->
 <div class="container-fluid p-5">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
             <img class="d-block mx-auto" src="src/assets/images/brand-1.png">
         </div>
 
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
             <img class="d-block mx-auto" src="src/assets/images/brand-2.png">
         </div>
 
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
             <img class="d-block mx-auto" src="src/assets/images/brand-3.png">
         </div>
 
-        <div class="col-md-3">
+        <div class="col-6 col-md-3">
             <img class="d-block mx-auto" src="src/assets/images/brand-4.png">
         </div>
     </div>
@@ -535,7 +535,7 @@
 
 
 <!--form section -->
-<div class="container-fluid bg-light p-5">
+<div class="container-fluid bg-light">
     <div class="row p-5">
         <div class="col-md-6">
             <hr class="my-5">
