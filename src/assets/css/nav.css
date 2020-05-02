@@ -21,6 +21,3 @@ a.nav-link:hover {
   transition: width 3s;
   transition-timing-function: linear;
 }
-.active {
-  border-bottom: 4px solid deepskyblue !important;
-}
