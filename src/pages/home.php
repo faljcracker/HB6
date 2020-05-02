@@ -212,6 +212,7 @@
         </div>
         <div class="col-md-9">
             <div id="offer-slider" class="offer-slider d-flex flex-column flex-md-row">
+
                 <div class="m-2">
                     <div class="card">
                         <img src="src/assets/images/img-1.jpg" class="card-img-top" alt="...">
@@ -226,6 +227,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="m-2">
                     <div class="card">
                         <img src="src/assets/images/img-2.jpg" class="card-img-top" alt="...">
@@ -234,19 +236,6 @@
                             <p class="card-text">Provides a scalable and customizable solution to clients who have
                                 programs to retire
                                 outdated IT assets</p>
-                            <a href="#">readmore <i class="fa fa-long-arrow-right"></i></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="m-2">
-                    <div class="card">
-                        <img src="src/assets/images/img-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h6 class="card-title">MULTIMODAL TRANSPORT</h6>
-                            <p class="card-text">Combined rail road transport is particularly suitable for the
-                                transportation of
-                                hazardous goods since it reduces risk.</p>
                             <a href="#">readmore <i class="fa fa-long-arrow-right"></i></a>
 
                         </div>
@@ -261,6 +250,21 @@
                             <p class="card-text">To best support your ever changing logistics needs, we are continually
                                 evolving our
                                 transportation services</p>
+                            <a href="#">readmore <i class="fa fa-long-arrow-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="m-2">
+                    <div class="card">
+                        <img src="src/assets/images/img-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">AIR FREIGHT</h6>
+                            <p class="card-text">Our AIRFAST services have been designed for customers who need their
+                                goods delivered
+                                urgently</p>
                             <a href="#">readmore <i class="fa fa-long-arrow-right"></i></a>
 
                         </div>
@@ -283,12 +287,12 @@
 
                 <div class="m-2">
                     <div class="card">
-                        <img src="src/assets/images/img-6.jpg" class="card-img-top" alt="...">
+                        <img src="src/assets/images/img-3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title">AIR FREIGHT</h6>
-                            <p class="card-text">Our AIRFAST services have been designed for customers who need their
-                                goods delivered
-                                urgently</p>
+                            <h6 class="card-title">MULTIMODAL TRANSPORT</h6>
+                            <p class="card-text">Combined rail road transport is particularly suitable for the
+                                transportation of
+                                hazardous goods since it reduces risk.</p>
                             <a href="#">readmore <i class="fa fa-long-arrow-right"></i></a>
 
                         </div>
