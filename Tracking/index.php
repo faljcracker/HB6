@@ -175,7 +175,7 @@ if (isset($_POST['submit'])) {
 <!-- display an error if no match is found -->
 <div class="container">
     <script type='text/javascript'>
-    alert('Sorry no match found for Candidate Number: <?php echo $_POST['
+    alert('Sorry no match found for Tracking Number: <?php echo $_POST['
         tracking_number ']; ?>. Please verify and try again ');
     </script>
     <h6 class="mb-5">Sorry no match found for Tracking Number <strong
