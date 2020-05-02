@@ -41,9 +41,9 @@ if (isset($_POST['submit'])) { /* check for form submission */
     </div>
 </div>
 
-<div class="container tracking-form">
-    <div class="row">
-        <div class="col-md-6 mx-auto">
+<div class="container my-5">
+    <div class="row ">
+        <div class="col-md-8 p-3 p-md-5 tracking-form m-2 mx-md-auto">
             <h1>Track Your shipments</h1>
             <p>Automatically detect courier based on tracking number format.</p>
 

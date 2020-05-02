@@ -10,13 +10,11 @@ hr {
   width: 10% !important;
 }
 .tracking-form {
-  padding: 3rem;
   color: white;
   text-align: center !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/warehouse.jpg");
   background-position: center;
   background-size: cover;
-  margin-bottom: 3rem;
 }
 .tracking-form .form-control:focus {
   border: none !important;
