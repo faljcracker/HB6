@@ -1,8 +1,6 @@
 //slick slider
 $(document).ready(function () {
 
-  console.log("custom.js loaded");
-
   $('#offer-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -57,10 +55,10 @@ $(document).ready(function () {
 
   });
 
-  initMap();
 
 });
 
+initMap();
 
 function initMap() {
   var uluru = { lat: 34.425510, lng: -116.985370 };
