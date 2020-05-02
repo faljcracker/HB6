@@ -20,3 +20,6 @@ hr {
   padding: 1px !important;
   background-color: deepskyblue !important;
 }
+#map {
+  height: 500px;
+}
