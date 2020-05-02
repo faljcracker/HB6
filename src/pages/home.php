@@ -11,8 +11,8 @@
 
                         <hr>
 
-                        <h1>TRANS-ATLANTIC</h1>
-                        <h1>DELIVERY</h1>
+                        <h1>UNIVERSAL-CARGO</h1>
+                        <h1>LOGISTICS</h1>
 
                         <p class="my-5">Assuring the compliant handling of temperature sensitive healthcare products in
                             today's
@@ -35,8 +35,8 @@
 
                         <hr>
 
-                        <h1>TRANS-ATLANTIC</h1>
-                        <h1>DELIVERY</h1>
+                        <h1>UNIVERSAL-CARGO</h1>
+                        <h1>LOGISTICS</h1>
 
                         <p class="my-5">Assuring the compliant handling of temperature sensitive healthcare products in
                             today's
@@ -59,8 +59,8 @@
 
                         <hr>
 
-                        <h1>TRANS-ATLANTIC</h1>
-                        <h1>DELIVERY</h1>
+                        <h1>UNIVERSAL-CARGO</h1>
+                        <h1>LOGISTICS</h1>
 
                         <p class="my-5">Assuring the compliant handling of temperature sensitive healthcare products in
                             today's
@@ -82,8 +82,8 @@
 
                         <hr>
 
-                        <h1>TRANS-ATLANTIC</h1>
-                        <h1>DELIVERY</h1>
+                        <h1>UNIVERSAL-CARGO</h1>
+                        <h1>LOGISTICS</h1>
 
                         <p class="my-5">Assuring the compliant handling of temperature sensitive healthcare products in
                             today's
@@ -133,7 +133,7 @@
             <div class="row">
                 <div class="col-6">
                     <p class="mb-4 font-weight-bold">PAUL HELMINGER</p>
-                    <p>Chairman of the Board of TracknTrace Cargo</p>
+                    <p>Chairman of the Board of UNL Cargo</p>
                 </div>
                 <div class="col-6">
                     <img src="src/assets/images/autograph-1.png" class="img-fluid">
@@ -541,14 +541,15 @@
             <hr class="my-5">
             <h2>WHAT MAKES US SPECIAL?</h2>
             <p class="my-4">
-                Over 42,000 dedicated employees, working in 17 regional clusters around the globe, deliver operational
-                excellenc
+                Over 42,000 dedicated employees, working in 17 regional clusters around the globe, delivering
+                operational
+                excellence
             </p>
 
             <div class="row icon-desc">
                 <div class="col-md-6">
                     <div>
-                        <i class="fa fa-archive fa-4x" aria-hidden="true"></i>
+                        <i class="fas fa-box-open  fa-4x" aria-hidden="true"></i>
                     </div>
                     <div>
                         <p>PACKAGING AND STORAGE</p>
@@ -585,6 +586,3 @@
         </div>
     </div>
 </div>
-
-<app-maps></app-maps>
-<app-footer></app-footer>
