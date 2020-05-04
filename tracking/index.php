@@ -56,13 +56,13 @@ if (isset($_POST['submit'])) { /* check for form submission */
             <p>Automatically detect courier based on tracking number format.</p>
 
             <form method="post" name="tracking_form" class="form-inline my-5 d-block">
-                <label class="sr-only" for="search">number</label>
-                <div class="input-group mb-2 mr-sm-2">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text bg-white border-0"><i class="fa fa-search"></i></div>
+                <label class="sr-only" for="search">Tracking Number</label>
+                <div class="input-group">
+                    <div class="input-group-prepend d-none d-md-block">
+                        <div class="btn btn-lg bg-white"><i class="fa fa-search"></i></div>
                     </div>
                     <input type="text" class="form-control form-control-lg border-0" id="search"
-                        placeholder="Tracking number" name="tracking_number">
+                        placeholder="Tracking Number" name="tracking_number">
                     <div class="input-group-append"><input name="submit" type="submit" class="btn btn-lg btn-danger"
                             value="TRACK">
                     </div>
@@ -89,7 +89,8 @@ document.getElementById('tracking-form').classList.add('d-none');
 
     <div class="row p-2">
         <div class="col-md-9 mb-5">
-            <h1 class="mb-5"><img class="img-fluid" src="src/assets/images/tracking-search.png">Parcel Tracking</h1>
+            <h1 class="mb-5 text-center text-md-left "><img class="img-fluid mb-2 mb-md-0"
+                    src="../src/assets/images/tracking-search.png"><br class="d-md-none">Parcel Tracking</h1>
 
             <div class="row">
                 <div class="col-md-4">
