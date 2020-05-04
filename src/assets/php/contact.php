@@ -9,9 +9,9 @@ $webmaster_email = "faljcracker@gmail.com";
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$home_page = "../../";
-$error_page = "../../pages/error.php";
-$feedback_page = "../../pages/success.php";
+$home_page = "../../../";
+$error_page = "../../../pages/error.php";
+$feedback_page = "../../../pages/success.php";
 
 /*
 This next bit loads the form field data into variables.
