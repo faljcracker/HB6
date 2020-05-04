@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav my-5 text-center">
                     <li class="nav-item m-2">
-                        <a class="nav-link px-md-4" href="../Home">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link px-md-4" href="../">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item m-2 ">
                         <a class="nav-link px-md-4" href="../tracking">Track And Trace</a>
