@@ -47,4 +47,11 @@
     </div>
 </header>
 
+<div class="container p-5 my-5">
+    <div class="text-center my-3">
+        <h2>Thank you. Your <br class="d-md-none"><span class="text-primary"> message</span> has been recorded</h2>
+        <p>We will respond in due time</p>
+    </div>
+</div>
+
 <?php require 'footer.html'; ?>

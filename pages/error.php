@@ -47,4 +47,11 @@
     </div>
 </header>
 
+<div class="container p-5 my-5">
+    <div class="text-center my-3">
+        <h2>Sorry your <br class="d-md-none"><span class="text-danger"> message</span> was not sent</h2>
+        <p>please try again!</p>
+    </div>
+</div>
+
 <?php require 'footer.html'; ?>

@@ -11,7 +11,7 @@ If you change the names of any of the pages, you will need to change the values 
 */
 $home_page = "../../";
 $error_page = "../../pages/error.php";
-$feedback_page = "../../pages/feedback.php";
+$feedback_page = "../../pages/success.php";
 
 /*
 This next bit loads the form field data into variables.
