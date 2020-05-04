@@ -29,21 +29,25 @@ hr {
   background-image: url("../images/sea_freight.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .slide_two {
   background-image: url("../images/plane2.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .slide_three {
   background-image: url("../images/truck.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .slide_four {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/warehouse.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .bg-blue-transparent {
   background-color: rgba(0, 51, 102, 0.5);
@@ -103,6 +107,7 @@ hr {
   background-image: url("../images/mountain.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .faq .card {
   color: black;
@@ -225,6 +230,7 @@ a.nav-link:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/truck-1.jpg");
   background-position: center;
   background-size: auto;
+  background-attachment: fixed;
 }
 .tracking-header h1 {
   color: white;
@@ -238,6 +244,7 @@ a.nav-link:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/warehouse.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 #tracking-form .form-control:focus {
   border: none !important;
