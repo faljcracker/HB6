@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) { /* check for form submission */
 
 <?php require 'header.html'; ?>
 
-<div class="header">
+<div class="tracking-header">
 
     <?php require 'nav.html'; ?>
 

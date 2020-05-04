@@ -221,15 +221,15 @@ a.nav-link:hover {
 }
 
 /* tracking css */
-.header {
+.tracking-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/truck-1.jpg");
   background-position: center;
   background-size: auto;
 }
-.header h1 {
+.tracking-header h1 {
   color: white;
 }
-.header hr {
+.tracking-header hr {
   width: 10% !important;
 }
 #tracking-form {
@@ -297,6 +297,14 @@ footer i {
 
 /* about css */
 .about-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/cubes.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.contact-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/cubes.jpg");
   background-size: auto;
   background-attachment: fixed;
