@@ -344,3 +344,13 @@ footer i {
   outline: 0;
   box-shadow: inset 0 -1px 0 deepskyblue;
 }
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 0 !important;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  width: 275px;
+}
